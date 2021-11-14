@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(145, 150, 145);
+} 
+
+img {
+    width: 275px; 
+    height: 250px;   
+}
+
+.container-all-divs { /*box holding all divs w contents (images and text) */
+    width: 900px;
+    display: flex; 
+    flex-direction: column;
+    row-gap: 1%;
+    background-color: rgb(235, 240, 235);
+    margin: 60px; auto; 
+}
+
+.div-row { /*boxes holding 3 divs */
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    margin 5px 10px;  
+    justify-content: space-around;
+    margin-top: 15px; 
+    margin-left: 12px;   
+}
+
+.image-text { /*individual boxes holding pics and text */
+    display: flex; 
+    flex-direction: column; 
+    width: 250px; 
+    height: 250px; 
+        flex: 1;    
+}
+
+.image-text
+
+.box-image { /*box containing image; child of image-text box */
+    width: 100%; 
+    height: 90%; 
+    overflow: hidden;
+}
+
+img { /*child of each image-text box */
+       object-fit: fill; 
+}
+
+.box-text {
+    width: 100%; 
+    height: 10%; 
+    display: inline; 
+    font-size: 10vw;
+}
+
+p { /*child of each image-text box */
+    color: black;
+    font-weight: 700;
+    font-size: 0.9rem; 
+    width: 100%;
+    text-align: center; 
+    font-family: verdana
+
+}
+
+@media screen {max-width: 400px {
+    .container-all-divs {
+        width: 100%;
+    }
+    .div-row, .image-text, .box-image, .box-text {
+        width: 100%; 
+    }  
+}
+
